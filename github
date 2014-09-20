@@ -1,0 +1,14 @@
+#ssh
+cd ~/.ssh/
+ssh-keygen
+cat id_rsa.pud | pbcopy
+vim .ssh/config
+-------------------
+Host github
+HostName github.com
+IdentityFile ~/.ssh/id_rsa
+User dslika
+-------------------
+
+vim .git/config
+urlをgit@github.com:dslika/xxxに設定するとusernameを聞かれなくなる
