@@ -1,0 +1,11 @@
+# apt
+this is how to remove a pkg
+
+    sudo apt-get remove tig
+
+thist is how remove a pkg inclouding its conf files
+
+    sudo apt-get purge tig
+
+this is how to check what files are installed
+dpkg -L tig
