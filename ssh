@@ -1,0 +1,4 @@
+sudo vim /etc/hosts
+
+ssh-keygen
+ssh-copy-id cow

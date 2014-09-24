@@ -1,0 +1,10 @@
+# Change commit Author
+git filter-branch --commit-filter '
+  if [ "$GIT_AUTHOR_NAME" = "dslika" ];
+  then
+    GIT_AUTHOR_NAME="k.ri";
+    GIT_AUTHOR_EMAIL="ri@kizuna.co.jp";
+    git commit-tree "$@";
+  else
+    git commit-tree "$@";
+    fi' HEAD
