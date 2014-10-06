@@ -8,3 +8,17 @@ git filter-branch --commit-filter '
   else
     git commit-tree "$@";
     fi' HEAD
+
+# git pull --rebase; git push
+http://blog.layer8.sh/ja/2013/04/08/best-git-commands-for-the-lonely-programmer/
+
+
+
+git pull --rebase origin master
+git status
+
+vim both modified
+
+git rebase --continue
+
+git push
